@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class About extends BaseController
 {
     public function index()
     {
         $data = array(
-            'title' => 'Home',
-            'isi' => 'home'
+            'title' => 'About',
+            'isi' => 'v_about'
         );
         return view('layout/v_wrapper', $data);
     }
