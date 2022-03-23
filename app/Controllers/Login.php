@@ -20,38 +20,38 @@ class Login extends BaseController
 
     public function cek_login()
     {
-        // if ($this->validate([
-        //     'email' => [
-        //         'label'  => 'e-mail',
-        //         'rules'  => 'required',
-        //         'errors' => [
-        //             'required' => '{field} Wajib diisi!!',
-        //         ],
-        //     ],
-        //     'password' => [
-        //         'label'  => 'password',
-        //         'rules'  => 'required',
-        //         'errors' => [
-        //             'required' => '{field} Wajib diisi!!',
-        //         ],
-        //     ],
-        // ])) {//jika valid
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
-        $cek = $this->LoginModel->cek_login($email, $password);
-        if ($cek) {
-            // session()->set('log', true);
-            // session()->set('nama_user', $cek['nama_user']);
-            // session()->set('email', $cek['email']);
-            return redirect()->to(base_url('home'));
+        if ($this->validate([
+            'email' => [
+                'label'  => 'e-mail',
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'Email Wajib diisi!!',
+                ],
+            ],
+            'password' => [
+                'label'  => 'password',
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'Password Wajib diisi!!',
+                ],
+            ],
+        ])) { //jika valid
+            $email = $this->request->getPost('email');
+            $password = base64_encode($this->request->getPost('password'));
+            $cek = $this->LoginModel->cek_login($email, $password);
+            if ($cek) {
+                session()->set('log', true);
+                session()->set('nama_user', $cek['nama_user']);
+                session()->set('email', $cek['email']);
+                return redirect()->to(base_url('home'));
+            } else {
+                session()->setFlashData('pesan', 'Login Gagal, Username atau Password Salah!');
+                return redirect()->to(base_url('login'));
+            }
         } else {
-            session()->setFlashData('pesan', 'Login Gagal, Username atau Password Salah!');
-            return redirect()->to(base_url('login'));
+            session()->setFlashData('errors', \Config\Services::validation()->getErrors());
+            return redirect()->to(base_url('/login'));
         }
-        // } else {
-        //     session()->setFlashData('errors', \Config\Services::validation()->getErrors());
-        //     return redirect()->to(base_url('auth/index'));
-        // }
     }
 
     public function logout()

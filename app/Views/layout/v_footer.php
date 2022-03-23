@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container footer">
     <h1>Footer</h1>
 </div>
 

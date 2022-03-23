@@ -1,3 +1,3 @@
 <div class="container">
-    <h2>About Page</h2>
+    <h2 class="about">About Page</h2>
 </div>

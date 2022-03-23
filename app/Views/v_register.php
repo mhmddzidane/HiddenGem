@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Hidden Gem </title>
+    <title>Register Hidden Gem </title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -48,7 +48,7 @@
                                 <div class="card-body p-md-5 mx-md-4">
 
                                     <div class="text-center">
-                                        <h4 class="mt-1 mb-5 pb-1">Selamat datang di Hidden Gem</h4>
+                                        <h4 class="mt-1 mb-5 pb-1">Buat Akun Hidden Gem Baru</h4>
                                     </div>
 
                                     <?php
@@ -71,8 +71,13 @@
                                     }
                                     ?>
 
-                                    <?= form_open('login/cek_login'); ?>
-                                    <p>Silahkan Login menggunakan akun yang terdaftar</p>
+                                    <?= form_open('register/cek_register'); ?>
+                                    <p>Masukan data-data dibawah ini</p>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" class="form-control" placeholder="Username" name="nama_user" />
+
+                                    </div>
 
                                     <div class="form-outline mb-4">
                                         <input type="email" class="form-control" placeholder="Email" name="email" />
@@ -84,14 +89,19 @@
 
                                     </div>
 
+                                    <div class="form-outline mb-4">
+                                        <input type="password" class="form-control" name="password_conf" placeholder="Konfirmasi Password" />
+
+                                    </div>
+
                                     <div class="text-center pt-1 mb-5 pb-1">
-                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" style="width:100%">Log in</button><br>
-                                        <a class="text-muted" href="#!" style="text-decoration: none;">Lupa Password?</a>
+                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" style="width:100%">Register</button><br>
+
                                     </div>
 
                                     <div class="d-flex align-items-center justify-content-center pb-4">
-                                        <p class="mb-0 me-2">Belum punya akun?</p>
-                                        <a href="<?= base_url('register') ?>" class="btn btn-outline-danger">Register</a>
+                                        <p class="mb-0 me-2">Sudah punya akun?</p>
+                                        <a href="<?= base_url('login') ?>" class="btn btn-outline-danger">Login</a>
                                     </div>
 
                                     <?= form_close() ?>

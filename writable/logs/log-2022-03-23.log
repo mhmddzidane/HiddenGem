@@ -1,0 +1,26 @@
+CRITICAL - 2022-03-23 02:50:59 --> AuthFilter filter must have a matching alias defined.
+#0 C:\xampp8\htdocs\hiddengem\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+#1 C:\xampp8\htdocs\hiddengem\system\Filters\Filters.php(244): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 C:\xampp8\htdocs\hiddengem\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp8\htdocs\hiddengem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-23 02:58:35 --> Undefined variable $errors_email
+#0 C:\xampp8\htdocs\hiddengem\app\Views\v_login.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp8\\htdoc...', 58)
+#1 C:\xampp8\htdocs\hiddengem\system\View\View.php(210): include('C:\\xampp8\\htdoc...')
+#2 C:\xampp8\htdocs\hiddengem\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp8\htdocs\hiddengem\system\Common.php(1089): CodeIgniter\View\View->render('v_login', Array, true)
+#4 C:\xampp8\htdocs\hiddengem\app\Controllers\Login.php(18): view('v_login')
+#5 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#6 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8\htdocs\hiddengem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-23 03:30:33 --> Too few arguments to function App\Models\LoginModel::cek_login(), 1 passed in C:\xampp8\htdocs\hiddengem\app\Controllers\Login.php on line 41 and exactly 2 expected
+#0 C:\xampp8\htdocs\hiddengem\app\Controllers\Login.php(41): App\Models\LoginModel->cek_login('zidane@gmail.co...')
+#1 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(832): App\Controllers\Login->cek_login()
+#2 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp8\htdocs\hiddengem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
