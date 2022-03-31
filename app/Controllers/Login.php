@@ -41,6 +41,7 @@ class Login extends BaseController
             $cek = $this->LoginModel->cek_login($email, $password);
             if ($cek) {
                 session()->set('log', true);
+                session()->set('id_user', $cek['id_user']);
                 session()->set('nama_user', $cek['nama_user']);
                 session()->set('email', $cek['email']);
                 return redirect()->to(base_url('home'));
@@ -57,10 +58,9 @@ class Login extends BaseController
     public function logout()
     {
         session()->remove('log');
+        session()->remove('id_user');
         session()->remove('nama_user');
         session()->remove('email');
-        session()->remove('level');
-        session()->remove('foto');
 
         session()->setFlashData('pesan', 'Anda telah Logout');
         return redirect()->to(base_url('login'));

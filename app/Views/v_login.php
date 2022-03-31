@@ -15,10 +15,10 @@
             background: #fccb90;
 
             /* Chrome 10-25, Safari 5.1-6 */
-            background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+            background: -webkit-linear-gradient(to right, #dceb88, #a8e086, #6fd38c, #00c597);
 
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+            background: linear-gradient(to right, #dceb88, #a8e086, #6fd38c, #00c597);
         }
 
         @media (min-width: 768px) {
@@ -91,7 +91,7 @@
 
                                     <div class="d-flex align-items-center justify-content-center pb-4">
                                         <p class="mb-0 me-2">Belum punya akun?</p>
-                                        <a href="<?= base_url('register') ?>" class="btn btn-outline-danger">Register</a>
+                                        <a href="<?= base_url('register') ?>" class="btn btn-outline-success">Register</a>
                                     </div>
 
                                     <?= form_close() ?>
