@@ -2,3 +2,39 @@ body {
     background:#000; 
     color:#FFF; 
  }
+
+ .head-row
+ {
+    background-color: #00C597;
+    color: #FCFCD4;
+    width: 100%;
+    font-family: 'poppins';
+    height: 113px;
+ }
+ .nav-logo
+ {
+     float: left;
+     font-size: 32px;
+     padding: 31px 0 31px 39px;
+     font-weight:600;
+     margin-right: 419px;
+ }
+ 
+ .nav-logo span
+ {
+     color: #E4E842;
+ }
+ 
+.nav-menu
+{
+    float: right;
+}
+
+.nav-menu li
+  {
+    float: left;
+     padding:35px 50px 36px 50px ;
+     list-style: none;
+     font-size: 24px;
+     font-weight: 400;
+  }
