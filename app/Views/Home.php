@@ -9,7 +9,7 @@
 				</div>
 			</div>
 			<div class="hd-img">
-				<img src="<?= base_url('/img/Component 1.svg') ?>" alt="Icon-hd">
+				<img id="gbr" src="<?= base_url('/img/Component 1.svg') ?>" alt="Icon-hd" width="454" height="510">
 			</div>
 		</div>
 	</div>
