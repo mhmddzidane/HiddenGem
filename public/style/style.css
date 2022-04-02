@@ -1,37 +1,98 @@
+/*NAVBAR STYLE*/
 .head-row {
-  background-color: #00c597;
-  color: #fcfcd4;
-  width: 100%;
-  font-family: "poppins";
-  height: 113px;
+    background-color: #00c597;
+    color: #fcfcd4;
+    width: 100%;
+    font-family: "poppins";
+    height: 113px;
 }
 
 .nav-logo {
-  float: left;
-  font-size: 24px;
-  padding: 39px 0 39px 39px;
-  font-weight: 600;
-  margin-right: 419px;
+    float: left;
+    font-size: 24px;
+    padding: 39px 0 39px 39px;
+    font-weight: 600;
 }
 
 .nav-logo span {
-  color: #e4e842;
+    color: #e4e842;
 }
 
 .nav-menu {
-  float: right;
-  padding-right: 79px;
+    float: right;
+    padding-right: 79px;
 }
 
 .nav-menu a {
-  text-decoration: none;
+    text-decoration: none;
+    color: #fcfcd4;
 }
 
 .nav-menu li {
-  float: left;
-  color: #fcfcd4;
-  padding: 41px 0 42px 87px;
-  list-style: none;
-  font-size: 20px;
-  font-weight: 400;
+    float: left;
+    padding: 41px 0 42px 80px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* HEADING STYLE*/
+.heading {
+    background: linear-gradient(180deg, rgba(0, 197, 151, 0.5) 0%, rgba(252, 252, 212, 0.235) 62.5%, rgba(249, 249, 249, 0.5) 97.92%);
+    font-family: 'Poppins';
+}
+
+.container-hd {
+    width: 100%;
+    height: 735px;
+}
+
+.hd-text {
+    padding: 197px 150px 26px 120px;
+}
+
+.hd-text h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 98px;
+    color: #0F9575;
+}
+
+.hd-text span {
+    color: #44D5B2;
+}
+
+.hd-text h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #00C597;
+}
+
+.input-btn-hd {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buku-tamu {
+    position: relative;
+    color: white;
+    background-color: #DB3C6A;
+    font-weight: 700;
+    font-size: 18px;
+    width: 300px;
+    height: 70px;
+    left: -4px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.hd-img {
+    left: 887px;
+    top: 224px;
+    position: absolute;
 }
