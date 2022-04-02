@@ -3,10 +3,10 @@
         <div class="nav-logo">HIDDEN <span>GEM</span></div>
         <div class="nav-menu">
             <ul>
-                <li>Feed</li>
-                <li>Explore</li>
-                <li>Blog</li>
-                <li>Profile</li>
+                <li><a href="#">Feed</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Profile</a></li>
             </ul>
         </div>
     </div>

@@ -1,32 +1,37 @@
 .head-row {
-    background-color: #00C597;
-    color: #FCFCD4;
-    width: 100%;
-    font-family: 'poppins';
-    height: 113px;
+  background-color: #00c597;
+  color: #fcfcd4;
+  width: 100%;
+  font-family: "poppins";
+  height: 113px;
 }
 
 .nav-logo {
-    float: left;
-    font-size: 24px;
-    padding: 39px 0 39px 39px;
-    font-weight: 600;
-    margin-right: 419px;
+  float: left;
+  font-size: 24px;
+  padding: 39px 0 39px 39px;
+  font-weight: 600;
+  margin-right: 419px;
 }
 
 .nav-logo span {
-    color: #E4E842;
+  color: #e4e842;
 }
 
 .nav-menu {
-    float: right;
-    padding-right: 79px;
+  float: right;
+  padding-right: 79px;
+}
+
+.nav-menu a {
+  text-decoration: none;
 }
 
 .nav-menu li {
-    float: left;
-    padding: 41px 0 42px 87px;
-    list-style: none;
-    font-size: 20px;
-    font-weight: 400;
+  float: left;
+  color: #fcfcd4;
+  padding: 41px 0 42px 87px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
 }
