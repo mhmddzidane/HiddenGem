@@ -6,7 +6,7 @@
                 <li><a href="#">Feed</a></li>
                 <li><a href="#">Explore</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Profile</a></li>
+                <li class="login"><a href="#">Profile</a></li>
             </ul>
         </div>
     </div>
