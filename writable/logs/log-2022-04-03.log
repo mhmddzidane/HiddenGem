@@ -1,0 +1,14 @@
+CRITICAL - 2022-04-03 01:20:57 --> Undefined property: App\Controllers\Komentar::$db
+#0 C:\xampp8\htdocs\hiddengem\app\Controllers\Komentar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp8\\htdoc...', 10)
+#1 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(832): App\Controllers\Komentar->index()
+#2 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komentar))
+#3 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp8\htdocs\hiddengem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-03 01:58:43 --> Undefined property: App\Controllers\Komentar::$db
+#0 C:\xampp8\htdocs\hiddengem\app\Controllers\Komentar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp8\\htdoc...', 10)
+#1 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(832): App\Controllers\Komentar->index()
+#2 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komentar))
+#3 C:\xampp8\htdocs\hiddengem\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp8\htdocs\hiddengem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

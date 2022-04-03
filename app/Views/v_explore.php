@@ -121,7 +121,7 @@
                                         <img class="ms-3" src="<?= base_url('foto_post/' . $value['foto_post']) ?>" width="300px" height="500px" alt="" />
                                     </div>
                                     <div class="col-lg-6">
-                                        <h4><?= $value['nama_user']; ?></h4>
+                                        <h5><a href="<?= base_url('explore') ?>" style="text-decoration: none; color:black"><?= $value['nama_user']; ?></a></h5>
                                         <hr>
                                         <h5><?= $value['judul_post']; ?></h5>
                                         <p><?= $value['desc_post']; ?></p>
