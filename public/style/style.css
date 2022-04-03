@@ -1,9 +1,16 @@
 /*NAVBAR STYLE*/
+* {
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
 .head-row {
     background-color: #00c597;
     color: #fcfcd4;
     width: 100%;
-    font-family: "poppins";
     height: 113px;
 }
 
@@ -39,7 +46,6 @@
 /* HEADING STYLE*/
 .heading {
     background: linear-gradient(180deg, rgba(0, 197, 151, 0.5) 0%, rgba(252, 252, 212, 0.235) 62.5%, rgba(249, 249, 249, 0.5) 97.92%);
-    font-family: 'Poppins';
 }
 
 .container-hd {
@@ -100,4 +106,43 @@
 #gbr {
     width: 500px;
     height: 570px;
+}
+
+/* Content-Home STYLE*/
+.wrapper-home {
+    height: 1100px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 80px 107px;
+}
+
+.container-home h1 {
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+
+.container-home h1,
+p {
+    color: #00C597;
+    text-align: center;
+}
+
+.content-box {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-feed {
+    height: 350px;
+    width: 600px;
+    margin: 18px;
+    background-color: white;
+    box-shadow: 15px 15px 15px rgb(214, 214, 214);
+}
+
+.container-home p {
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 40px;
 }

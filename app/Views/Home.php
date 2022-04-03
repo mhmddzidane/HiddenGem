@@ -13,3 +13,25 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="wrapper-home">
+		<div class="container-home">
+			<h1>Explore Popular Places</h1>
+			<div class="content-box">
+				<div class="card-feed">
+					<img src="?>" alt="">
+				</div>
+				<div class="card-feed"></div>
+				<div class="card-feed"></div>
+				<div class="card-feed"></div>
+			</div>
+			<p>See More</p>
+		</div>
+	</div>
+
+	<div class="wrapper-tim">
+		<div class="container-tim">
+			<div></div>
+		</div>
+	</div>
