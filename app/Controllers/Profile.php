@@ -32,9 +32,11 @@ class Profile extends BaseController
             'judul_post' => $this->request->getPost('judul_post'),
             'foto_post' => $nama_foto,
             'desc_post' => $this->request->getPost('desc_post'),
+            'range_harga' => $this->request->getPost('range_post'),
+            'maps' => $this->request->getPost('maps_post'),
         );
         $foto->move('foto_post', $nama_foto); //directory upload file
         $this->ProfileModel->tambah_post($data);
-        return redirect()->to(base_url('feed'));
+        return redirect()->to(base_url('explore'));
     }
 }
