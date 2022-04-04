@@ -1,5 +1,5 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="mt-5 footer">
+<div class="footer">
     <!-- Footer -->
     <footer class="text-center text-lg-start text-dark" style="background-color: #00c597">
         <!-- Section: Social media -->

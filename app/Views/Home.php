@@ -32,6 +32,71 @@
 
 	<div class="wrapper-tim">
 		<div class="container-tim">
-			<div></div>
+			<h1>Professional Team</h1>
+
+			<div class="container">
+				<div class="row">
+					<!-- Single Advisor-->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+							<!-- Team Thumb-->
+							<div class="advisor_thumb"><img src="<?= base_url('/img/iffanadn.jpg') ?>" width="200px" alt="">
+								<!-- Social Info-->
+								<div class="social-info"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+							</div>
+							<!-- Team Details-->
+							<div class="single_advisor_details_info">
+								<h6>Iffan Adhyatmawan Nusli</h6>
+								<p class="designation">Front End Developer</p>
+							</div>
+						</div>
+					</div>
+					<!-- Single Advisor-->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+							<!-- Team Thumb-->
+							<div class="advisor_thumb"><img src="<?= base_url('/img/affandn.jpg') ?>" width="200px" alt="">
+								<!-- Social Info-->
+								<div class="social-info"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+							</div>
+							<!-- Team Details-->
+							<div class="single_advisor_details_info">
+								<h6>Affan Dharmawan Nusli</h6>
+								<p class="designation">Mahasiswa Sholeh</p>
+							</div>
+						</div>
+					</div>
+					<!-- Single Advisor-->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+							<!-- Team Thumb-->
+							<div class="advisor_thumb"><img src="<?= base_url('/img/zidane.png') ?>" width="225px" alt="">
+								<!-- Social Info-->
+								<div class="social-info"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+							</div>
+							<!-- Team Details-->
+							<div class="single_advisor_details_info">
+								<h6>Muhammad Zidane</h6>
+								<p class="designation">Back End Developer</p>
+							</div>
+						</div>
+					</div>
+					<!-- Single Advisor-->
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+							<!-- Team Thumb-->
+							<div class="advisor_thumb"><img src="<?= base_url('/img/ryantraman.png') ?>" width="210px" alt="">
+								<!-- Social Info-->
+								<div class="social-info"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+							</div>
+							<!-- Team Details-->
+							<div class="single_advisor_details_info">
+								<h6>Ryantraman</h6>
+								<p class="designation">Penjaga Bumi</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
