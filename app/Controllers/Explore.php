@@ -3,12 +3,14 @@
 namespace App\Controllers;
 
 use App\Models\ExploreModel;
+use App\Models\KomentarModel;
 
 class Explore extends BaseController
 {
     public function __construct()
     {
         $this->ExploreModel = new ExploreModel();
+        $this->KomentarModel = new KomentarModel();
     }
 
     public function index()
@@ -17,7 +19,17 @@ class Explore extends BaseController
             'title' => 'Explore',
             'isi' => 'v_explore',
             'explore_post' => $this->ExploreModel->tampil_post(),
+            'komentar' => $this->KomentarModel->tampil_komentar()
         );
         return view('layout/v_wrapper', $data);
+    }
+
+    public function komentar()
+    {
+        $komen = array(
+            'isi' => 'v_explore',
+            'komentar' => $this->KomentarModel->tampil_komentar()
+        );
+        return view('layout/v_wrapper', $komen);
     }
 }
