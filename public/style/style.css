@@ -43,9 +43,12 @@
   font-weight: 400;
 }
 
-.login a {
-  background-color: rgba(21, 160, 128, 0.5);
-  padding: 41px 38px 30px 38px;
+.nl li {
+  margin: 0px;
+}
+
+.nl li a {
+  color: #00c597;
 }
 
 /* HEADING STYLE*/
