@@ -18,9 +18,14 @@
 
     }
 
+    body {
+        background: linear-gradient(180deg, rgba(0, 197, 151, 0.5) 0%, rgba(252, 252, 212, 0.235) 62.5%, rgba(249, 249, 249, 0.5) 97.92%);
+    }
+
     .container h1 {
         text-align: center;
         font-weight: 500;
+        color: white;
     }
 </style>
 
