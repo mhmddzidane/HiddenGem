@@ -7,10 +7,21 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .container h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-weight: 500;
+        color: darkcyan;
+    }
+
+    body {}
 </style>
 
 <body>
     <div class="container">
+        <h2>Artikel Wisata Terkini</h2>
         <?php
 
         use function PHPSTORM_META\elementType;
