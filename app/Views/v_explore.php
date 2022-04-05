@@ -39,7 +39,7 @@
 
             foreach ($explore_post as $key => $value) { ?>
                 <div class="col-lg-4">
-                    <img data-bs-toggle="modal" data-bs-target="#exampleModal<?= $value['id_postingan'] ?>" class="mt-3 explore-gallery" src="<?= base_url('foto_post/' . $value['foto_post']) ?>" width="300px" height="300px" alt="" />
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal<?= $value['id_postingan'] ?>" class="mt-3 mb-5 explore-gallery" src="<?= base_url('foto_post/' . $value['foto_post']) ?>" width="300px" height="300px" alt="" />
                 </div>
             <?php } ?>
         </div>

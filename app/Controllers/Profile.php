@@ -17,26 +17,22 @@ class Profile extends BaseController
         $data = array(
             'title' => 'Profile',
             'isi' => 'v_profile',
+            'user' => $this->ProfileModel->tampil_data(),
         );
         return view('layout/v_wrapper', $data);
     }
 
-    public function tambah_post()
+    public function edit_profile()
     {
         $session = session();
-        $foto = $this->request->getFile('foto_post');
         $id_user = $session->get('id_user');
-        $nama_foto = $foto->getRandomName();
         $data = array(
             'id_user' => $id_user,
-            'judul_post' => $this->request->getPost('judul_post'),
-            'foto_post' => $nama_foto,
-            'desc_post' => $this->request->getPost('desc_post'),
-            'range_harga' => $this->request->getPost('range_post'),
-            'maps' => $this->request->getPost('maps_post'),
+            'nama_user' => $this->request->getPost('name'),
+            'email' => $this->request->getPost('email'),
+            'password' => base64_encode($this->request->getVar('password'))
         );
-        $foto->move('foto_post', $nama_foto); //directory upload file
-        $this->ProfileModel->tambah_post($data);
-        return redirect()->to(base_url('explore'));
+        $this->ProfileModel->edit_profile($data);
+        return redirect()->to(base_url('profile'));
     }
 }

@@ -1,28 +1,28 @@
-</style>
 <div class="container">
-    <h1>Profile</h1>
-    <h1>New Post</h1>
-    <?php echo form_open_multipart('profile/tambah_post') ?>
-    <div class="form-group">
-        <label>Judul Post</label>
-        <input type="text" class="form-control" name="judul_post" placeholder="Masukan Judul Post" required>
+    <h1 class="mt-5">Profile</h1>
+    <?php echo form_open_multipart('profile/edit_profile') ?>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Foto</label>
+                <input class="form-control" name="foto" type="file" required>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" class="form-control" value="<?= $user['nama_user']; ?>" name="name" placeholder="Masukan Nama Baru" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" value="<?= $user['email']; ?>" name="email" placeholder="Masukan Email Baru" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" name="password" placeholder="Masukan Password Baru" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success mt-5">Edit</button>
     </div>
-    <div class="form-group">
-        <label>Foto Post</label>
-        <input type="file" class="form-control" name="foto_post" required>
-    </div>
-    <div class="form-group">
-        <label>Deskripsi Post</label>
-        <input type="text" class="form-control" name="desc_post" placeholder="Masukan Deskripsi Post" required>
-    </div>
-    <div class="form-group">
-        <label>Range Harga</label>
-        <input type="text" class="form-control" name="range_post" placeholder="Masukan Range Harga Tempat" required>
-    </div>
-    <div class="form-group">
-        <label>Link Maps</label>
-        <input type="text" class="form-control" name="maps_post" placeholder="Masukan Link Maps" required>
-    </div>
-    <button type="submit" class="btn btn-success">Post</button>
     <?php echo form_close() ?>
 </div>

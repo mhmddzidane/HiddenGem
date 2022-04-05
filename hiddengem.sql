@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Apr 2022 pada 09.10
+-- Waktu pembuatan: 05 Apr 2022 pada 09.35
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 8.0.8
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `hiddengem`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `bukutamu`
+--
+
+CREATE TABLE `bukutamu` (
+  `id_tamu` int(50) NOT NULL,
+  `nama_tamu` varchar(100) NOT NULL,
+  `nim_tamu` varchar(100) NOT NULL,
+  `pesan_tamu` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `bukutamu`
+--
+
+INSERT INTO `bukutamu` (`id_tamu`, `nama_tamu`, `nim_tamu`, `pesan_tamu`) VALUES
+(1, 'Zidane', '41519010103', 'Aplikasi Yang Bagus'),
+(2, 'Jake', '', 'good');
 
 -- --------------------------------------------------------
 
@@ -64,7 +85,8 @@ CREATE TABLE `postingan` (
 
 INSERT INTO `postingan` (`id_postingan`, `judul_post`, `foto_post`, `desc_post`, `id_user`, `maps`, `range_harga`) VALUES
 (9, 'Hotel Sentosa', '1649054416_d64ec8975611546e4f6a.jpg', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p', 7, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.98707644674!2d106.7116703!3d-6.23116425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa0422d12303%3A0xf285a79aab0b3ece!2sHari%20Hari%20Swalayan%20Ciledug!5e0!3m2!1sid!2sid!4v1649054275932!5m2!1sid!2sid', '50k - 100k'),
-(10, 'Pink Beach, Pulau Komodo, Nusa Tenggara Timur', '1649056173_c79f7f4d0b1aeaaf0694.jpg', 'Pink beach merupakan salah satu pulau yang berada di Pulau Komodo, Flores Barat, Nusa Tenggara Timur. Untuk datang kemari kamu harus menempuh perjalanan darat dan laut karena letaknya yang ada di Pulau Komodo. Pantai ini berjarak 82 kilometer dari Kota Mataram.  Nggak usah khawatir Bela, pemandangan yang akan kamu dapati akan sebanding dengan perjalanan yang kamu tempuh.  Di sinilah saatnya kamu mulai browsing dan memilih kapal yang memiliki kredibilitas baik, untuk berlayar di sekitar Labuan Ba', 7, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15769.040697840259!2d116.55349502055249!3d-8.855352796243425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4e8b7d3e1b23%3A0xf558da0a9b5eef39!2sPink%20Beach%20Lombok!5e0!3m2!1sid!2sid!4v1649056053503!5m2!1sid!2sid', 'Rp30 ribu – Rp 40 ribu');
+(10, 'Pink Beach, Pulau Komodo, Nusa Tenggara Timur', '1649056173_c79f7f4d0b1aeaaf0694.jpg', 'Pink beach merupakan salah satu pulau yang berada di Pulau Komodo, Flores Barat, Nusa Tenggara Timur. Untuk datang kemari kamu harus menempuh perjalanan darat dan laut karena letaknya yang ada di Pulau Komodo. Pantai ini berjarak 82 kilometer dari Kota Mataram.  Nggak usah khawatir Bela, pemandangan yang akan kamu dapati akan sebanding dengan perjalanan yang kamu tempuh.  Di sinilah saatnya kamu mulai browsing dan memilih kapal yang memiliki kredibilitas baik, untuk berlayar di sekitar Labuan Ba', 7, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15769.040697840259!2d116.55349502055249!3d-8.855352796243425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4e8b7d3e1b23%3A0xf558da0a9b5eef39!2sPink%20Beach%20Lombok!5e0!3m2!1sid!2sid!4v1649056053503!5m2!1sid!2sid', 'Rp30 ribu – Rp 40 ribu'),
+(11, 'Tempat Liburan Tersembunyi di Bogor', '1649135886_df98267793d37df33057.webp', 'Tempat yang sangat menarik namun sepi pengunjung, bisa datang kesini bersama keluarga', 5, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126829.33497357341!2d106.72185096768533!3d-6.595018082386405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c44a0cd6aab5%3A0x301576d14feb9a0!2sBogor%2C%20Kp.%20Parung%20Jambu%2C%20Kota%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1649135857786!5m2!1sid!2sid', 'Rp30 ribu – Rp 40 ribu');
 
 -- --------------------------------------------------------
 
@@ -76,21 +98,28 @@ CREATE TABLE `user` (
   `id_user` int(20) NOT NULL,
   `nama_user` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  `foto` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id_user`, `nama_user`, `email`, `password`) VALUES
-(5, 'eren', 'eren@gmail.com', 'MTIz'),
-(6, 'Geralt of Rivia', 'geralt@gmail.com', 'MTIz'),
-(7, 'Muhammad Zidane', 'muhammadzidane633@gmail.com', 'bGVvMDUwODAx');
+INSERT INTO `user` (`id_user`, `nama_user`, `email`, `password`, `foto`) VALUES
+(5, 'Reiner Braun', 'reiner@gmail.com', 'MTIz', ''),
+(6, 'Geralt of Rivia', 'geralt@gmail.com', 'MTIz', ''),
+(7, 'Muhammad Zidane', 'muhammadzidane633@gmail.com', 'bGVvMDUwODAx', '');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `bukutamu`
+--
+ALTER TABLE `bukutamu`
+  ADD PRIMARY KEY (`id_tamu`);
 
 --
 -- Indeks untuk tabel `komentar`
@@ -115,6 +144,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `bukutamu`
+--
+ALTER TABLE `bukutamu`
+  MODIFY `id_tamu` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT untuk tabel `komentar`
 --
 ALTER TABLE `komentar`
@@ -124,7 +159,7 @@ ALTER TABLE `komentar`
 -- AUTO_INCREMENT untuk tabel `postingan`
 --
 ALTER TABLE `postingan`
-  MODIFY `id_postingan` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_postingan` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`

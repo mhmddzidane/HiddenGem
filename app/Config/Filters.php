@@ -49,6 +49,7 @@ class Filters extends BaseConfig
                 'profile', 'profile/*',
                 'explore', 'explore/*',
                 'blog', 'blog/*',
+                'upload', 'upload/*',
             ]],
             'toolbar',
             // 'honeypot',
