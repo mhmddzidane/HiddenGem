@@ -214,7 +214,7 @@
 									<div class="unit-left"><a class="product-big-figure" href="#"><img src="<?= base_url('foto_post/' . $value['foto_post']) ?>" alt="" width="600" height="366" /></a></div>
 									<div class="unit-body">
 										<div class="product-big-body">
-											<h5 class="product-big-title"><a href="#"><?= $value['judul_post']; ?></a></h5>
+											<h5 class="product-big-title mt-5"><a href="#"><?= $value['judul_post']; ?></a></h5>
 
 											<p class="product-big-text"><?= $value['desc_post']; ?></p><a class="button button-black-outline button-ujarak" href="<?= base_url('explore') ?>">Explore</a>
 											<div class="product-big-price-wrap"><span class="product-big-price"><?= $value['range_harga']; ?></span></div>

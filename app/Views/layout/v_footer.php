@@ -32,7 +32,7 @@
 
         <!-- Section: Links  -->
         <section class="footer-left">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-justify text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
@@ -47,9 +47,9 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-justify">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <h6 class="text-uppercase fw-bold text-white">Useful links</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
                             <a href="#!">Blog</a>
@@ -67,14 +67,14 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-justify">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <h6 class="text-uppercase fw-bold text-white">Contact</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p><i class="fas fa-home mr-3"></i> Ciledug, 15151</p>
-                        <p><i class="fas fa-envelope mr-3"></i> HideenGem@gmail.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        <p><i class="fas fa-home mr-2"></i> Ciledug, 15151</p>
+                        <p><i class="fas fa-envelope mr-2"></i> HideenGem@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-2"></i> + 01 234 567 89</p>
                     </div>
                     <!-- Grid column -->
                 </div>

@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main-outer" style="background-color: #00c597;">
                 <div class="rd-navbar-main">
                     <div class="rd-navbar-nav-wrap">
                         <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
