@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\ExploreModel;
-use App\Models\KomentarModel;
 
 class Explore extends BaseController
 {

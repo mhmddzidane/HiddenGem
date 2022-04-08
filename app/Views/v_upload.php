@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 class="mt-5 ">Upload Post</h1>
+    <h3 class="mt-5 mb-3">Upload Post</h3>
     <?php echo form_open_multipart('upload/tambah_post') ?>
     <div class="form-group">
         <label>Judul Post</label>
