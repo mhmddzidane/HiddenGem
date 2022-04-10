@@ -11,7 +11,7 @@
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!-- RD Navbar Brand-->
                         <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="index.html" style="font-size: 20px; color:#00c597; font-weight:600">HIDDEN <span style="color: #e4e842;">GEM</span><img src="" alt="" width="225" height="18" /></a>
+                            <!--Brand--><a class="brand" href="<?= base_url('home') ?>" style="font-size: 20px; color:#00c597; font-weight:600">HIDDEN <span style="color: #e4e842;">GEM</span><img src="" alt="" width="225" height="18" /></a>
                         </div>
                     </div>
                     <div class="rd-navbar-aside-right rd-navbar-collapse">
@@ -43,7 +43,7 @@
                                     Profile
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="<?= base_url('profile') ?>">Show Profile</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('profile') ?>">Edit Profile</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>

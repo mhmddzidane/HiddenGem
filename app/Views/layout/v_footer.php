@@ -39,7 +39,7 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold text-white">Hidden <span>Gem</span></h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px" />
                         <p>
                             Looking for unexpected best places
                         </p>
@@ -50,18 +50,18 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-justify">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold text-white">Useful links</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px" />
                         <p>
                             <a href="#!">Blog</a>
                         </p>
                         <p>
-                            <a href="#!">Explore</a>
+                            <a href="<?= base_url('explore') ?>">Explore</a>
                         </p>
                         <p>
-                            <a href="#!">Feed</a>
+                            <a href="<?= base_url('upload') ?>">Upload</a>
                         </p>
                         <p>
-                            <a href="#!">Buku Tamu</a>
+                            <a href="#!" id="ui-to-top">Buku Tamu</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -70,7 +70,7 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-justify">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold text-white">Contact</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px" />
                         <p><i class="fas fa-home mr-2"></i> Ciledug, 15151</p>
                         <p><i class="fas fa-envelope mr-2"></i> HideenGem@gmail.com</p>
                         <p><i class="fas fa-phone mr-2"></i> + 01 234 567 88</p>
