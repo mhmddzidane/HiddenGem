@@ -16,7 +16,7 @@
         color: darkcyan;
     }
 
-    body {}
+   
 </style>
 
 <body>

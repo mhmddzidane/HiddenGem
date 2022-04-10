@@ -19,10 +19,10 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="text" class="form-control" name="password" placeholder="Masukan Password Baru" required>
+                <input type="text" class="form-control" value="<?= $user['password']; ?>" name="password" placeholder="Masukan Password Baru" required>
             </div>
         </div>
-        <button type="submit" class="btn btn-success mt-5">Edit</button>
+        <button type="submit" class="btn button-default-outline-2 rounded-3 mt-5 col-4 mx-auto">Save</button>
     </div>
     <?php echo form_close() ?>
 </div>
