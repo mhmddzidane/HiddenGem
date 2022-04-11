@@ -18,6 +18,7 @@ class Profile extends BaseController
             'title' => 'Profile',
             'isi' => 'v_profile',
             'user' => $this->ProfileModel->tampil_data(),
+            'tampil_post' => $this->ProfileModel->tampil_post(),
         );
         return view('layout/v_wrapper', $data);
     }

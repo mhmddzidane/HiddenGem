@@ -25,4 +25,13 @@ class ProfileModel extends Model
     {
         $this->db->table('user')->where('id_user', $data['id_user'])->update($data);
     }
+
+    public function tampil_post()
+    {
+        $session = session();
+        return $this->db->table("postingan")
+            ->where('id_user', $session->get('id_user'))
+            // ->join('user', 'user.id_user = postingan.id_user', 'left')
+            ->get()->getResultArray();
+    }
 }

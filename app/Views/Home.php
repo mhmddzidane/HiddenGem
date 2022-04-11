@@ -1,3 +1,10 @@
+<style>
+	.home-gallery {
+		width: 368px;
+		height: 300px;
+	}
+</style>
+
 <body>
 	<div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
 	<div class="preloader">
@@ -17,7 +24,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-10">
-									<h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Enjoy the Best Destinations with Our Travel Agency</h6>
+									<h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Enjoy the Best Destinations with Our Platform</h6>
 									<h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Explore</span><span class="font-weight-bold"> The World</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
 								</div>
 							</div>
@@ -41,8 +48,8 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-10">
-									<h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Build your Next Holiday Trip with Us</h6>
-									<h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Create</span><span class="font-weight-bold"> Your Tour</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
+									<h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Find your Next Holiday Trip with Us</h6>
+									<h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Create</span><span class="font-weight-bold"> Your Trip</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
 								</div>
 							</div>
 						</div>
@@ -62,7 +69,7 @@
 							foreach ($explore_post as $key => $value) { ?>
 								<div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
 									<ul class="list-marked-2 box-categories-list">
-										<li><a href="#"><img src="<?= base_url('foto_post/' . $value['foto_post']) ?>" alt="" width="368" height="420" /></a>
+										<li><a href="#"><img src="<?= base_url('foto_post/' . $value['foto_post']) ?>" alt="" class="home-gallery" /></a>
 											<h5 class="box-categories-title"><?= $value['judul_post']; ?></h5>
 										</li>
 									</ul>
@@ -84,7 +91,7 @@
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-delay=".1s">
 						<div class="box-width-lg-470">
-							<h3>Discover New Horizons</h3>
+							<h3>Discover New Places</h3>
 							<!-- Bootstrap tabs-->
 							<div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left" id="tabs-7">
 								<!-- Nav tabs-->
@@ -96,16 +103,16 @@
 								<!-- Tab panes-->
 								<div class="tab-content">
 									<div class="tab-pane fade show active" id="tabs-7-1">
-										<p>Wonder Tour is committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders with you.</p>
-										<div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
+										<p>HIdden Gem is a platform to find and share your travel recommendations. We are passionate about travel and sharing the world's wonders with you.</p>
+										<div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="/home">Get in Touch</a><a class="button button-black-outline button-md" href="/home">Read More</a></div>
 									</div>
 									<div class="tab-pane fade" id="tabs-7-2">
-										<p>We are proud to offer excellent quality and value for money in our tours, which give you the chance to experience your chosen destination in an authentic and exciting way.</p>
-										<div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
+										<p>We are proud to offer excellent platform, which give you the chance to find and choose your destination in an authentic and exciting way.</p>
+										<div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="/home">Get in Touch</a><a class="button button-black-outline button-md" href="/home">Read More</a></div>
 									</div>
 									<div class="tab-pane fade" id="tabs-7-3">
-										<p>Our mission is to provide the ultimate travel planning experience while becoming a one-stop shop for every travel service available in the industry.</p>
-										<div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
+										<p>Our mission is to provide the ultimate travel recommendations while becoming a one-stop shop for every travel platform service available in the industry.</p>
+										<div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="/home">Get in Touch</a><a class="button button-black-outline button-md" href="/home">Read More</a></div>
 									</div>
 								</div>
 							</div>
@@ -139,8 +146,8 @@
 									<div class="box-icon-classic-icon fl-bigmug-line-circular220"></div>
 								</div>
 								<div class="unit-body">
-									<h5 class="box-icon-classic-title"><a href="#">Wide Variety of Tours</a></h5>
-									<p class="box-icon-classic-text">We offer a wide variety of personally picked tours with destinations all over the globe.</p>
+									<h5 class="box-icon-classic-title"><a href="#">Wide Variety of Places</a></h5>
+									<p class="box-icon-classic-text">We offer a wide variety of personally posted places with destinations all over the globe.</p>
 								</div>
 							</div>
 						</article>
@@ -153,7 +160,7 @@
 								</div>
 								<div class="unit-body">
 									<h5 class="box-icon-classic-title"><a href="#">Highly Qualified Service</a></h5>
-									<p class="box-icon-classic-text">Our tour managers are qualified, skilled, and friendly to bring you the best service.</p>
+									<p class="box-icon-classic-text">Our platform is qualified to bring you the best service.</p>
 								</div>
 							</div>
 						</article>
@@ -178,8 +185,8 @@
 									<div class="box-icon-classic-icon fl-bigmug-line-hot67"></div>
 								</div>
 								<div class="unit-body">
-									<h5 class="box-icon-classic-title"><a href="#">Handpicked Hotels</a></h5>
-									<p class="box-icon-classic-text">Our team offers only the best selection of affordable and luxury hotels to our clients.</p>
+									<h5 class="box-icon-classic-title"><a href="#">Upload your Post</a></h5>
+									<p class="box-icon-classic-text">Our platform offers traveler to share their experince to others.</p>
 								</div>
 							</div>
 						</article>
@@ -191,8 +198,8 @@
 									<div class="box-icon-classic-icon fl-bigmug-line-wallet26"></div>
 								</div>
 								<div class="unit-body">
-									<h5 class="box-icon-classic-title"><a href="#">Best Price Guarantee</a></h5>
-									<p class="box-icon-classic-text">If you find tours that are cheaper than ours, we will compensate the difference.</p>
+									<h5 class="box-icon-classic-title"><a href="#">Show travel price</a></h5>
+									<p class="box-icon-classic-text">Every posted places are include with the price.</p>
 								</div>
 							</div>
 						</article>
@@ -203,7 +210,7 @@
 		<!-- Hot tours-->
 		<section class="section section-sm bg-default">
 			<div class="container">
-				<h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Hot Tours</span></h3>
+				<h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Hot Places</span></h3>
 				<div class="row row-sm row-40 row-md-50">
 					<?php $i = 0;
 					foreach ($explore_post as $key => $value) { ?>
@@ -309,8 +316,8 @@
 			<div class="parallax-container" data-parallax-img="images/mountainHeader.jpg">
 				<div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
 					<div class="container">
-						<h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">First-class Impressions</span><span class="d-block font-weight-light">are Waiting for You!</span></h2>
-						<p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Our agency offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!</p><a class="button button-secondary button-pipaluk" href="#">Book a Tour Now</a>
+						<h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">Share your experince</span><span class="d-block font-weight-light">Now!</span></h2>
+						<p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Our platform offers a feature to share user's travel experience to other with destinations all over the world. Browse our website to find your next trip!</p><a class="button button-secondary button-pipaluk" href="<?= base_url('upload') ?>">Upload your Trip</a>
 					</div>
 				</div>
 			</div>

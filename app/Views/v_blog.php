@@ -15,8 +15,6 @@
         font-weight: 500;
         color: darkcyan;
     }
-
-   
 </style>
 
 <body>
