@@ -331,9 +331,9 @@
 					<!-- Thumbnail Classic-->
 					<?php foreach ($explore_post as $key => $value) { ?>
 						<article class="thumbnail thumbnail-mary">
-							<div class="thumbnail-mary-figure"><img src="<?= base_url('foto_post/' . $value['foto_post']) ?>" alt="" width="270" height="195" />
+							<div class="thumbnail-mary-figure"><img src="<?= base_url('foto_post/' . $value['foto_post']) ?>" alt="" style="width: 500px; height: 200px" />
 							</div>
-							<div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="<?= base_url('foto_post/' . $value['foto_post']) ?>" data-lightgallery="item"><img src="images/gallery-image-1-270x195.jpg" alt="" width="270" height="195" /></a>
+							<div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="<?= base_url('foto_post/' . $value['foto_post']) ?>" data-lightgallery="item"><img src="images/gallery-image-1-270x195.jpg" alt="" /></a>
 							</div>
 						</article>
 					<?php } ?>
