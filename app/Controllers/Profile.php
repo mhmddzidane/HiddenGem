@@ -3,12 +3,14 @@
 namespace App\Controllers;
 
 use App\Models\ProfileModel;
+use App\Models\TamuModel;
 
 class Profile extends BaseController
 {
     public function __construct()
     {
         $this->ProfileModel = new ProfileModel();
+        $this->TamuModel = new TamuModel();
         helper('form');
     }
 
@@ -19,6 +21,7 @@ class Profile extends BaseController
             'isi' => 'v_profile',
             'user' => $this->ProfileModel->tampil_data(),
             'tampil_post' => $this->ProfileModel->tampil_post(),
+            'tamu' => $this->TamuModel->tampil_tamu(),
         );
         return view('layout/v_wrapper', $data);
     }

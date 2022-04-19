@@ -3,12 +3,14 @@
 namespace App\Controllers;
 
 use App\Models\ProfileModel;
+use App\Models\TamuModel;
 
 class Upload extends BaseController
 {
     public function __construct()
     {
         $this->ProfileModel = new ProfileModel();
+        $this->TamuModel = new TamuModel();
         helper('form');
     }
 
@@ -17,6 +19,7 @@ class Upload extends BaseController
         $data = array(
             'title' => 'Uplaod',
             'isi' => 'v_upload',
+            'tamu' => $this->TamuModel->tampil_tamu(),
         );
         return view('layout/v_wrapper', $data);
     }
