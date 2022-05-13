@@ -10829,10 +10829,10 @@ h2.title-modern > span {
 		top: -10px;
 	}
 	.desktop .team-modern:hover .team-modern-figure::before {
-		border-color: #01b3a7;
+		border-color: #e85858;
 	}
 	.desktop .team-modern-2:hover .team-modern-figure::before {
-		border-color: #50ba87;
+		border-color: #e7a855;
 	}
 }
 

@@ -32,7 +32,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <?php echo form_open_multipart('home/bukutamu') ?>
+        <?php echo form_open_multipart('Home/bukutamu') ?>
         <div class="form-group mt-4">
             <label>Nama</label>
             <input type="text" class="form-control" name="nama_tamu" placeholder="Masukan Nama" required>

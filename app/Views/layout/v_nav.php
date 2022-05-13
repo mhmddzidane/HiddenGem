@@ -11,7 +11,7 @@
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!-- RD Navbar Brand-->
                         <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="<?= base_url('home') ?>" style="font-size: 20px; color:#00c597; font-weight:600">HIDDEN <span style="color: #e4e842;">GEM</span><img src="" alt="" width="225" height="18" /></a>
+                            <!--Brand--><a class="brand" href="<?= base_url('Home') ?>" style="font-size: 20px; color:#00c597; font-weight:600">HIDDEN <span style="color: #e4e842;">GEM</span><img src="" alt="" width="225" height="18" /></a>
                         </div>
                     </div>
                     <div class="rd-navbar-aside-right rd-navbar-collapse">
@@ -30,7 +30,7 @@
                         </ul>
                         <!-- RD Navbar Nav-->
                         <ul class="rd-navbar-nav">
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('home') ?>">Home</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('Home') ?>">Home</a>
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('explore') ?>">Explore</a>
                             </li>

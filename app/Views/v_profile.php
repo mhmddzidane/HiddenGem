@@ -14,7 +14,7 @@
         transform: scale(1.1);
     }
 
-    .modal-content {
+    .konten {
         width: 700px;
     }
 
@@ -31,7 +31,7 @@
         <div class="col-lg-6">
             <div class="form-group">
                 <label>Foto</label>
-                <input class="form-control" name="foto" type="file" required>
+                <input class="form-control" name="foto_user" type="file" required>
             </div>
         </div>
         <div class="col-lg-6">
@@ -71,8 +71,13 @@
     <?php foreach ($tampil_post as $key => $value) { ?>
         <div class="modal fade" id="exampleModal<?= $value['id_postingan']; ?>">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+                <div class="modal-content konten">
                     <div class="modal-body">
+                        <div style="float : right">
+
+                            <h5 class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal<?= $value['id_postingan'] ?>">Edit</h5>
+                            <h5 class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal<?= $value['id_postingan'] ?>">Delete</h5>
+                        </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <img class="imgModal" src="<?= base_url('foto_post/' . $value['foto_post']) ?>" alt="" />
@@ -96,6 +101,78 @@
 <?php } ?>
 </div>
 
+<!-- deleteModal -->
+<?php foreach ($tampil_post as $key => $value) { ?>
+    <div class="modal fade" id="deleteModal<?= $value['id_postingan'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-danger">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="deleteModalLabel">Delete Post?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-light">
+                    Apakah anda yakin untuk menghapus <?= $value['judul_post'] ?>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-light" href="<?= base_url('profile/delete_post/' . $value['id_postingan']) ?>">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
+<!-- editmodal -->
+<?php foreach ($tampil_post as $key => $value) { ?>
+    <div class="modal fade" id="editModal<?= $value['id_postingan'] ?>" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <?php echo form_open_multipart('profile/edit_post/' . $value['id_postingan']) ?>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label for="">Foto Post</label>
+                            <img src="<?= base_url('foto_post/' . $value['foto_post']) ?>" width="500px" alt="" srcset="">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="form-group">
+                                <label>Ganti Foto</label>
+                                <input class="form-control" name="foto_edit" type="file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Judul Post</label>
+                        <input class="form-control" value="<?= $value['judul_post']; ?>" name="judul_post" placeholder="Masukan Judul Post" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Deskripsi Post</label>
+                        <input class="form-control" value="<?= $value['desc_post']; ?>" name="desc_post" placeholder="Masukan Deskripsi Post" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Range Harga</label>
+                        <input class="form-control" value="<?= $value['range_harga']; ?>" name="range_harga" placeholder="Masukan Range Harga" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Maps</label>
+                        <input class="form-control" value="<?= $value['maps']; ?>" name="maps" placeholder="Masukan Maps" required>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+                <?php echo form_close() ?>
+            </div>
+        </div>
+    </div>
+    </div>
+<?php } ?>
+
 <!-- buku tamu -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header" style="background-color: #00c597;">
@@ -103,7 +180,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <?php echo form_open_multipart('home/bukutamu') ?>
+        <?php echo form_open_multipart('Home/bukutamu') ?>
         <div class="form-group mt-4">
             <label>Nama</label>
             <input type="text" class="form-control" name="nama_tamu" placeholder="Masukan Nama" required>

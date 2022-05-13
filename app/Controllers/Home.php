@@ -18,7 +18,7 @@ class Home extends BaseController
     {
         $data = array(
             'title' => 'Home',
-            'isi' => 'home',
+            'isi' => 'v_home',
             'tamu' => $this->TamuModel->tampil_tamu(),
             'explore_post' => $this->ExploreModel->tampil_post(),
         );
@@ -33,6 +33,6 @@ class Home extends BaseController
             'pesan_tamu' => $this->request->getPost('pesan_tamu'),
         );
         $this->TamuModel->tambah_tamu($data);
-        return redirect()->to(base_url('home'));
+        return redirect()->to(base_url('Home'));
     }
 }

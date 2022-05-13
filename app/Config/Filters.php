@@ -44,8 +44,7 @@ class Filters extends BaseConfig
         ],
         'after' => [
             'AuthFilter' => ['except' => [
-                'home', 'home/*',
-                'feed', 'feed/*',
+                'Home', 'Home/*',
                 'profile', 'profile/*',
                 'explore', 'explore/*',
                 'blog', 'blog/*',

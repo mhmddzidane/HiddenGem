@@ -45,7 +45,7 @@ class Login extends BaseController
                 session()->set('nama_user', $cek['nama_user']);
                 session()->set('email', $cek['email']);
                 session()->set('password', $cek['password']);
-                return redirect()->to(base_url('home'));
+                return redirect()->to(base_url('Home'));
             } else {
                 session()->setFlashData('pesan', 'Login Gagal, Username atau Password Salah!');
                 return redirect()->to(base_url('login'));

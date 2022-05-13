@@ -1,11 +1,12 @@
 <style>
-    .blogimg {
-        width: 70%;
-        height: 250px;
-        margin-bottom: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .BlogImg {
+        width: 200px;
+        margin-top: -200px;
+        display: inline-block;
+    }
+
+    .container {
+        text-align: center;
     }
 
     .container h2 {
@@ -24,17 +25,22 @@
 
         use function PHPSTORM_META\elementType;
 
-        require_once(__DIR__ . "../../../public/scrapper/simple_html_dom.php");
+        require_once(__DIR__ . '\simple_html_dom.php');
 
-        $html = file_get_html('https://www.tokopedia.com/blog/travel-surga-dunia-indonesia-yang-jarang-diketahui/');
+        $html = file_get_html('https://www.traveloka.com/en-id/explore');
 
-        foreach ($html->find('img') as $element) {
-            if (str_contains($element->src, 'wisata')) { ?>
-                <img src=<?= $element->src ?> alt="" class="blogimg mt-2" srcset="">
-                <!-- <?php foreach ($html->find('h3') as $teks) { ?>
-                    <h3><?php echo $teks ?></h3>
-                <?php } ?> -->
-        <?php  }
+        foreach ($html->find('<div>') as $element) {
+            if (strpos($element->class, 'css-1dbjc4n r-xyw6el r-1j6l8hp') !== false) { ?>
+                <div class="BlogImg">
+
+                    <?= $element; ?>
+
+
+                </div>
+            <?php }
+            ?>
+
+        <?php
         } ?>
     </div>
 </body>
@@ -46,7 +52,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <?php echo form_open_multipart('home/bukutamu') ?>
+        <?php echo form_open_multipart('Home/bukutamu') ?>
         <div class="form-group mt-4">
             <label>Nama</label>
             <input type="text" class="form-control" name="nama_tamu" placeholder="Masukan Nama" required>
