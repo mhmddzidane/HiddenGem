@@ -52,7 +52,7 @@
                         <h6 class="text-uppercase fw-bold text-white">Useful links</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px" />
                         <p>
-                            <a href="#!">Blog</a>
+                            <a href="<?= base_url('blog') ?>">Blog</a>
                         </p>
                         <p>
                             <a href="<?= base_url('explore') ?>">Explore</a>
@@ -72,8 +72,8 @@
                         <h6 class="text-uppercase fw-bold text-white">Contact</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px" />
                         <p><i class="fas fa-home mr-2"></i> Ciledug, 15151</p>
-                        <p><i class="fas fa-envelope mr-2"></i> HideenGem@gmail.com</p>
-                        <p><i class="fas fa-phone mr-2"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-envelope mr-2"></i> HiddenGem@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +62 0812312343</p>
                         <p><i class="fas fa-print mr-2"></i> + 01 234 567 89</p>
                     </div>
                     <!-- Grid column -->

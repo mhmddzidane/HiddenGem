@@ -32,6 +32,17 @@
         width: 350px;
         height: 400px;
     }
+
+    @media only screen and (max-width: 600px) {
+        .modal-content {
+            width: 100%;
+        }
+
+        .imgModal {
+            width: 100%;
+            height: 200px;
+        }
+    }
 </style>
 
 <body>
@@ -71,6 +82,7 @@
         <div class="modal fade" id="exampleModal<?= $value['id_postingan']; ?>">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-6">

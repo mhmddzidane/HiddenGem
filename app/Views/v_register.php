@@ -111,7 +111,7 @@
                             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                                     <h4 class="mb-4">Temukan tempat yang jarang diketahui!</h4>
-                                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p class="small mb-0">HIDDEN GEM merupakan sebuah website yang berfungsi sebagai sebuah platform untuk menyebarkan rekomendasi tempat wisata serta mencari tempat wisata berdasarkan rekomendasi pengguna lain.</p>
                                 </div>
                             </div>
                         </div>

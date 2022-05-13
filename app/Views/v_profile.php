@@ -18,23 +18,32 @@
         width: 700px;
     }
 
+
     .imgModal {
         width: 350px;
         height: 400px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .konten {
+            width: 100%;
+        }
+
+        .imgModal {
+            width: 100%;
+            height: 200px;
+        }
     }
 </style>
 
 <div class="container">
     <h3 class="mt-5 mb-3">Profile</h3>
-    <?php echo form_open_multipart('profile/edit_profile') ?>
     <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group">
-                <label>Foto</label>
-                <input class="form-control" name="foto_user" type="file" required>
-            </div>
+        <div class="col-lg-5">
+            <img src="images/profile.svg" alt="profile">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7">
+            <?php echo form_open_multipart('profile/edit_profile') ?>
             <div class="form-group">
                 <label>Nama Lengkap</label>
                 <input type="text" class="form-control" value="<?= $user['nama_user']; ?>" name="name" placeholder="Masukan Nama Baru" required>
@@ -45,12 +54,13 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="text" class="form-control" name="password" placeholder="Masukan Password Baru" required>
+                <input type="password" class="form-control" name="password" placeholder="Masukan Password Baru" required>
             </div>
+
+            <button type="submit" class="btn button-default-outline-2 rounded-3 mt-5 col-4 mx-auto">Save</button>
+            <?php echo form_close() ?>
         </div>
-        <button type="submit" class="btn button-default-outline-2 rounded-3 mt-5 col-4 mx-auto">Save</button>
     </div>
-    <?php echo form_close() ?>
 
     <div>
         <h3 style="text-align: center;" class="mt-5">Your Post</h3>
@@ -72,6 +82,7 @@
         <div class="modal fade" id="exampleModal<?= $value['id_postingan']; ?>">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content konten">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body">
                         <div style="float : right">
 
