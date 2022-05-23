@@ -2,7 +2,7 @@
     <h3 class="mt-5 mb-3">Upload Post</h3>
     <div class="row">
         <div class="col-lg-4">
-            <img src=<?= base_url('images/upload.svg') ?> alt="upload">
+            <img class="animate__animated animate__slideInUp" src=<?= base_url('images/upload.svg') ?> alt="upload">
         </div>
 
         <div class="col-lg-8">

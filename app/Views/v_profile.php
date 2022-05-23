@@ -40,7 +40,7 @@
     <h3 class="mt-5 mb-3">Profile</h3>
     <div class="row">
         <div class="col-lg-5">
-            <img src="images/profile.svg" alt="profile">
+            <img class="animate__animated animate__jackInTheBox" src="images/profile.svg" alt="profile">
         </div>
         <div class="col-lg-7">
             <?php echo form_open_multipart('profile/edit_profile') ?>

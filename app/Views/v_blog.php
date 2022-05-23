@@ -1,26 +1,6 @@
-<style>
-    .BlogImg {
-        width: 200px;
-        margin-top: -200px;
-        display: inline-block;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    .container h2 {
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        font-weight: 500;
-        color: darkcyan;
-    }
-</style>
-
 <body>
     <div class="container">
-        <h2>Artikel Wisata Terkini</h2>
+        <h3>Explore Indonesia</h3>
         <?php
 
         use function PHPSTORM_META\elementType;
@@ -32,6 +12,27 @@
         foreach ($html->find('<div>') as $element) {
             if (strpos($element->class, 'css-1dbjc4n r-xyw6el r-1j6l8hp') !== false) { ?>
                 <div class="BlogImg">
+
+                    <?= $element; ?>
+
+
+                </div>
+            <?php }
+            ?>
+
+        <?php
+        } ?>
+
+        <h3>Artikel Wisata Terkini</h3>
+        <?php
+
+        require_once(__DIR__ . '\simple_html_dom.php');
+
+        $html = file_get_html('https://www.pegipegi.com/travel/category/destinasi/');
+
+        foreach ($html->find('<div>') as $element) {
+            if (strpos($element->id, 'archive-list-wrap') !== false) { ?>
+                <div class="BlogImgs">
 
                     <?= $element; ?>
 
@@ -96,3 +97,66 @@
 
     </div>
 </div>
+
+<style>
+    .BlogImg {
+        width: 200px;
+        margin-top: -200px;
+        display: inline-block;
+        transition: transform 0.2s;
+    }
+
+    .BlogImg:hover {
+        transform: scale(1.2);
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container h3 {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-weight: 500;
+        color: darkcyan;
+    }
+
+    /* pegipegi */
+    .feat-info-wrap {
+        display: none;
+    }
+
+    h2 {
+        color: black;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    h2:hover {
+        color: #00c597;
+    }
+
+    .archive-list-in p {
+        color: gray;
+        text-align: center;
+    }
+
+    .infinite-post {
+        margin-bottom: 50px;
+        display: inline-block;
+    }
+
+    .archive-list-img {
+        width: 100%;
+        transition: transform .2s;
+    }
+
+    .archive-list-img:hover {
+        transform: scale(1.1);
+    }
+
+    .mob-img {
+        display: none;
+    }
+</style>
